@@ -1,9 +1,9 @@
 {
- "version": 1793855962,
- "created": "2026-11-05T05:19:22Z",
- "size": 2485371,
- "sha256": "27d2079a4e2ee24bf6026d5a1ac542ac7b13d62211acae5e78e9a5550554682a",
- "sig": "LYHvA/xhmesFvLElDfW0IM0xryBDl7SuOHnveAd72kZ68/EqV4dZ/j2mpxGc6qOIK6GVipx0oVW3pmbRuRm2tw==",
+ "version": 1793857359,
+ "created": "2026-11-05T05:42:39Z",
+ "size": 2447648,
+ "sha256": "dd586523c8e56d7bebb781f85ef4a61424a4b556492bd39af36dee9efbb300e6",
+ "sig": "EuK0BhQi5hg/b4i5DkA4OQAwcv2vJQ54f9kK05qsDAcBkAMuCyFk4T4IZb2sOIcv9JjyVm8DL2jS6PhEG0JGJA==",
  "threats": 327200,
  "adhosts": 42500
 }
