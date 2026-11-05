@@ -82,6 +82,10 @@ def main():
         if not isinstance(sel, str) or CSS_BAD.search(sel) or len(sel) > 200:
             sys.exit(f"ABORT: unsafe selector {sel!r}")
     notice = json.load(open(os.path.join(SRC, "notice.json")))
+    allow_all_path = os.path.join(SRC, "allow-all.txt")
+    allow_all = sorted({d.lower() for d in lines(allow_all_path)}) if os.path.exists(allow_all_path) else []
+    if any(not DOM.match(d) for d in allow_all):
+        sys.exit("ABORT: bad domain in allow-all.txt")
 
     version = int(time.time())
     bundle = {
@@ -92,6 +96,7 @@ def main():
         "adhosts": ads,
         "youtube": {"css": yt["css"], "skipSelectors": yt["skipSelectors"]},
         "notice": notice,
+        "allowAll": allow_all,
     }
     raw = json.dumps(bundle, separators=(",", ":")).encode()
     gz = gzip.compress(raw, 9, mtime=0)

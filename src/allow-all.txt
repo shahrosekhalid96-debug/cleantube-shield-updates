@@ -1,0 +1,4 @@
+# Sites fully exempt from network filtering (their own pages only).
+# Used when a site's anti-adblock wall reacts to blocked requests.
+youtube.com
+youtube-nocookie.com
