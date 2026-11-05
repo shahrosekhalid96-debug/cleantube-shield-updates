@@ -1,0 +1,27 @@
+{
+  "css": [
+    "ytd-ad-slot-renderer",
+    "ytd-in-feed-ad-layout-renderer",
+    "ytd-banner-promo-renderer",
+    "ytd-statement-banner-renderer",
+    "ytd-promoted-sparkles-web-renderer",
+    "ytd-promoted-video-renderer",
+    "ytd-display-ad-renderer",
+    "ytd-companion-slot-renderer",
+    "ytd-action-companion-ad-renderer",
+    "ytd-merch-shelf-renderer",
+    "ytd-rich-item-renderer:has(ytd-ad-slot-renderer)",
+    "#masthead-ad",
+    "#player-ads",
+    ".ytp-ad-overlay-container",
+    ".ytp-featured-product",
+    ".ytp-paid-content-overlay"
+  ],
+  "skipSelectors": [
+    ".ytp-ad-skip-button",
+    ".ytp-ad-skip-button-modern",
+    ".ytp-skip-ad-button",
+    "button[id^='skip-button']",
+    ".ytp-ad-overlay-close-button"
+  ]
+}

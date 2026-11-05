@@ -1,0 +1,3 @@
+# Extra threat domains added by hand (one per line).
+# shield-test.invalid is a harmless self-test domain used by the weekly check-in.
+shield-test.invalid

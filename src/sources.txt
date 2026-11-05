@@ -1,0 +1,6 @@
+# kind  format  url
+threat  domains https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.medium-onlydomains.txt
+threat  domains  https://raw.githubusercontent.com/blocklistproject/Lists/master/alt-version/ransomware-nl.txt
+threat  domains  https://raw.githubusercontent.com/blocklistproject/Lists/master/alt-version/scam-nl.txt
+threat  domains  https://raw.githubusercontent.com/blocklistproject/Lists/master/alt-version/crypto-nl.txt
+ads     hosts   https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
