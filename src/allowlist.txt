@@ -48,3 +48,6 @@ gov.sa
 absher.sa
 stcpay.com.sa
 alrajhibank.com.sa
+2mdn.net
+fundingchoicesmessages.google.com
+imasdk.googleapis.com
