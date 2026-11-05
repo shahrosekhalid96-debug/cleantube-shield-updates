@@ -78,7 +78,9 @@ def main():
         sys.exit(f"ABORT: lists too small (threats={len(threats)}, ads={len(ads)})")
 
     yt = json.load(open(os.path.join(SRC, "youtube-config.json")))
-    for sel in yt["css"] + yt["skipSelectors"]:
+    yt.setdefault("hide", yt.get("css", []))
+    yt.setdefault("fade", [])
+    for sel in yt["hide"] + yt["fade"] + yt["skipSelectors"]:
         if not isinstance(sel, str) or CSS_BAD.search(sel) or len(sel) > 200:
             sys.exit(f"ABORT: unsafe selector {sel!r}")
     notice = json.load(open(os.path.join(SRC, "notice.json")))
@@ -94,7 +96,7 @@ def main():
         "created": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(version)),
         "threats": threats,
         "adhosts": ads,
-        "youtube": {"css": yt["css"], "skipSelectors": yt["skipSelectors"]},
+        "youtube": {"css": yt["hide"], "hide": yt["hide"], "fade": yt["fade"], "skipSelectors": yt["skipSelectors"]},
         "notice": notice,
         "allowAll": allow_all,
     }

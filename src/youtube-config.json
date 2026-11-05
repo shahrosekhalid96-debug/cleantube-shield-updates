@@ -1,21 +1,33 @@
 {
-  "css": [
-    "ytd-ad-slot-renderer",
-    "ytd-in-feed-ad-layout-renderer",
+  "hide": [
+    "ytd-rich-item-renderer:has(ytd-ad-slot-renderer)",
+    "ytd-rich-item-renderer:has(ytd-in-feed-ad-layout-renderer)",
+    "ytd-search-pyv-renderer",
+    "ytd-promoted-video-renderer",
+    "ytd-promoted-sparkles-web-renderer",
     "ytd-banner-promo-renderer",
     "ytd-statement-banner-renderer",
-    "ytd-promoted-sparkles-web-renderer",
-    "ytd-promoted-video-renderer",
+    "ytd-primetime-promo-renderer",
+    "ytd-mealbar-promo-renderer",
+    "yt-mealbar-promo-renderer",
+    "ytd-brand-video-singleton-renderer",
+    "ytd-brand-video-shelf-renderer",
+    "ytd-merch-shelf-renderer"
+  ],
+  "fade": [
+    "#masthead-ad",
+    "#player-ads",
+    "ytd-ad-slot-renderer",
+    "ytd-in-feed-ad-layout-renderer",
     "ytd-display-ad-renderer",
     "ytd-companion-slot-renderer",
     "ytd-action-companion-ad-renderer",
-    "ytd-merch-shelf-renderer",
-    "ytd-rich-item-renderer:has(ytd-ad-slot-renderer)",
-    "#masthead-ad",
-    "#player-ads",
+    "ytd-player-legacy-desktop-watch-ads-renderer",
+    "ytd-engagement-panel-section-list-renderer[target-id='engagement-panel-ads']",
     ".ytp-ad-overlay-container",
     ".ytp-featured-product",
-    ".ytp-paid-content-overlay"
+    ".ytp-paid-content-overlay",
+    ".html5-video-player.ad-showing video"
   ],
   "skipSelectors": [
     ".ytp-ad-skip-button",
