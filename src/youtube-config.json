@@ -35,5 +35,7 @@
     ".ytp-skip-ad-button",
     "button[id^='skip-button']",
     ".ytp-ad-overlay-close-button"
-  ]
+  ],
+  "adRate": 1,
+  "adSeek": false
 }

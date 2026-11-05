@@ -96,7 +96,8 @@ def main():
         "created": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(version)),
         "threats": threats,
         "adhosts": ads,
-        "youtube": {"css": yt["hide"], "hide": yt["hide"], "fade": yt["fade"], "skipSelectors": yt["skipSelectors"]},
+        "youtube": {"css": yt["hide"], "hide": yt["hide"], "fade": yt["fade"], "skipSelectors": yt["skipSelectors"],
+                    "adRate": min(16, max(1, float(yt.get("adRate", 1)))), "adSeek": bool(yt.get("adSeek", False))},
         "notice": notice,
         "allowAll": allow_all,
     }
